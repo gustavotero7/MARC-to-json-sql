@@ -12,12 +12,10 @@ namespace Jonas_Pre
     {
         static void Main(string[] args)
         {
-            //ReadRecords();
             string[] marcs = Directory.GetFiles("d:/Marcs/");
 
-            for (int i = 3; i < /*marcs.Length*/4; i++)
+            for (int i = 0; i < marcs.Length; i++)
             {
-                //Console.WriteLine(marcs[i]);
                 //MarcsToSQL(marcs[i]);
                 MarcsToJson(marcs[i]);
             }
